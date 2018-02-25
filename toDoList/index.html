@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta description="To-Do List App">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="./dist/main.css" charset="utf-8">
+        <link rel="stylesheet" href="./dist/styles.css" charset="utf-8">
+    </head>
+    <body>
+        <nav id="nav-bar" class="nav">
+            <!--a id="add-anchor" href="#" class="pull-right">
+                <img class="add-icon" src="./images/ic_add_black_24px.svg" alt="Add Sticky">
+            </a-->
+            <h3>Random User</h3>
+        </nav>
+        <div class="container">
+      <p><label for="new-task">Add Item</label>
+          <table>
+        <tr><td>Item Name:</td>        
+            <td><input id="new-task" type="text"></td></tr>
+        <tr><td>Date:</td><td><input id="new-task-date" type="text"></td></tr>
+        <tr><td>Author:</td><td><input id="new-task-author" type="text"></td></tr>
+        </table>
+        <button>Add</button>
+      </p>
+      
+      <h3>Todo</h3>
+      <ul id="incomplete-tasks">
+        <li><input type="checkbox"><label>Pay Bills</label><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        <li class="editMode"><input type="checkbox"><label>Go Shopping</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        
+      </ul>
+      
+      <h3>Completed</h3>
+      <ul id="completed-tasks">
+        <li><input type="checkbox" checked><label>See the Doctor</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+      </ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
